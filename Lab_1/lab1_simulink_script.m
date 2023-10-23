@@ -51,8 +51,3 @@ m_tot__K_t = 1.8;
 
 choice = 2;
 ID = choice + 1;
-
-
-%% Transfer Function For The System
-
-tf(linsys1)
