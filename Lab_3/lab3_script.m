@@ -11,8 +11,8 @@ b = 50;
 % Open-loop TF of the system
 TF_OL_vOverU = tf([0 1], [m b]);
 
-%step(TF_OL_vOverU)
-%stepinfo(TF_OL_vOverU)
+% step(TF_OL_vOverU)
+% stepinfo(TF_OL_vOverU)
 
 %% OBSERVATIONS:
 % 1. System is SUPER SLOW
@@ -31,9 +31,9 @@ TF_OL_vOverU = tf([0 1], [m b]);
 % Kp:Ki:Kd = 100:4:1
 
 %% ADDING PID CONTROLLER
-Kp = 5000
-Ki = 200
-Kd = 50 
+Kp = 470
+Ki = 18.8
+Kd = 4.7
 
 TF_OL_PIDController = pid(Kp, Ki, Kd);
 
